@@ -10,26 +10,24 @@
 
 ## CCKS 2017  ##
 <a name="17"></a>
-CCKS17：原始数据集分为训练集和测试集，其中训练集包括300个医疗记录，人工标注了五类实体(包括症状和体征、检查和检验、疾病和诊断、治疗、身体部位)。测试集包含100个医疗记录。 
+CCKS17数据集：原始数据集分为训练集和测试集，其中训练集包括300个医疗记录，人工标注了五类实体(包括症状和体征、检查和检验、疾病和诊断、治疗、身体部位)。测试集包含100个医疗记录。 
 
-语料数据统计
-|  | 症状体征|检查检验|疾病诊断|治疗|身体部位|总共| 
+**语料数据统计**
+|  | 症状体征|检查检验|疾病诊断|治疗|身体部位|总体| 
 | ----------- | :----:| :----: | :----: | --- | :----: | :----: |
 | 训练集 | 7,831	|9,546	|722	|1,048	|10,719|1|
 | 测试集 | 2,311	|3,143|	553|	465	|3,021|1|
 
 
+**现存方法性能比较 (%F值)**
 
-The CHEMDNER corpus consists of 10,000 PubMed abstracts, which contains a total of 84,355 chemical entity mentions. The original corpus is divided into training set (3,500 abstracts), development set (3,500 abstracts) and test set (3,000 abstracts)
 
-| Method | P | R | F1 | Paper | 
-| ----------- | :----:| :----: | :----: | --- |
-| tmChem (Leaman et al., 2015) | 89.09 | 85.75 | 87.39 | [tmChem: a high performance approach for chemical named entity recognition and normalization](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-7-S1-S3)|
-| CRF (Lu et al., 2015) | 88.73 | 87.41 | 88.06 | [CHEMDNER system with mixed conditional random fields and multi-scale word clustering](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-7-S1-S4)|
-| BiLSTM-CRF (Lample et al., 2016), Luo et al. (2018) rebuilt the model on the dataset | 91.31 | 87.73 | 89.48 | [Neural architectures for named entity recognition](https://arxiv.org/abs/1603.01360)|
-| Att-BiLSTM-CRF (Luo et al., 2018) | 92.29 | 90.01 | 91.14 | [An attention-based BiLSTM-CRF approach to document-level chemical named entity recognition](https://academic.oup.com/bioinformatics/article/34/8/1381/4657076)|
-| MTM-CW (Wang et al., 2019) | 91.30 | 87.53 | 89.37 | [Cross-type biomedical named entity recognition with deep multi-task learning](https://academic.oup.com/bioinformatics/article-abstract/35/10/1745/5126922?redirectedFrom=fulltext)|
-| BioBERT (Lee et al., 2019) | 92.80 | 91.92 | 92.36 | [BioBERT: a pre-trained biomedical language representation model for biomedical text mining](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz682/5566506?searchresult=1)|
+
+| 方法 | 症状体征|检查检验|疾病诊断|治疗|身体部位|总体|论文|
+| ----------- | :----:| :----: | :----: | --- | :----: | :----: | :----: |
+| HIT-CNER (Hu et al., 2017) | 96.00|	94.43|	78.97|	81.47|	87.48|	91.14| [HITSZ_CNER: a hybrid system for entity recognition from Chinese clinical text](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-7-S1-S3)|
+| BiLSTM-CRF-DIC (Hu et al., 2017) | 96.00|	94.43|	78.97|	81.47|	87.48|	91.14| [HITSZ_CNER: a hybrid system for entity recognition from Chinese clinical text](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-7-S1-S3)|
+
 
 
 
