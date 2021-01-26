@@ -24,7 +24,7 @@ CCKS17数据集：原始数据集分为训练集和测试集，其中训练集�
 
 
 | 方法 | 症状体征|检查检验|疾病诊断|治疗|身体部位|总体|论文|
-| ----------- | ----| ---- | ---- | ---- | ---- | ---- | ---- |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | HIT-CNER (Hu et al., 2017) Top1 | 96.00 |	94.43 |	78.97 |	81.47 |	87.48 | 91.14 | [HITSZ_CNER: a hybrid system for entity recognition from Chinese clinical text](http://ceur-ws.org/Vol-1976/paper05.pdf) |
 | BiLSTM-CRF-DIC (Wang et al., 2019) | - |	- |	- |	- |	- | 91.24 | [Incorporating dictionaries into deep neural networks for the chinese clinical named entity recognition](https://doi.org/10.1016/j.jbi.2019.103133) |
 | RD-CNN-CRF (Qiu et al., 2019) | - |	- |	- |	- |	- | 91.32 | [Chinese Clinical Named Entity Recognition Using Residual Dilated Convolutional Neural Network with Conditional Random Field](https://doi.org/10.1109/TNB.2019.2908678) |
