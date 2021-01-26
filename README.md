@@ -10,7 +10,7 @@
 <img src="/image/CNER.png" width = "400" height = "200" align=center />
 </div>
 
-- [Papers](BioNER_paper.md)
+- [Papers](CNER_paper.md)
     - 综述
     - Dictionary-based Methods
     - Rule-based Methods
@@ -22,7 +22,7 @@
         -  Neural Network-based Methods
         -  Others
 
-- [SOTA](BioNER_sota.md)
+- [SOTA](CNER_sota.md)
     - CCKS 2017
     - CCKS 2018
     - CCKS 2019

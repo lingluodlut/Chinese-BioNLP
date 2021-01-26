@@ -1,27 +1,24 @@
-# BioNER SOTA #
+# CNER SOTA #
 
- An overview of the state-of-the-art (SOTA) across the most common BioNER tasks and their corresponding datasets.
+中文电子病历实体识别任务的数据集以及相应数据集上系统模型性能表现。目前现存公开的中文电子病历标注数据十分稀缺，为了推动CNER系统在中文临床文本上的表现，中国知识图谱与语义计算大会(China Conference on Knowledge Graph and Semantic Computing, CCKS)在近几年都组织了面向中文电子病历的命名实体识别评测任务，下面我们主要关注CCKS评测上的结果。
  
-- [Chemical NER](#1)
-    -  CHEMDNER
-    -  CDR-Chemical
-- [Disease NER](#2)
-    -  NCBI-Disease
-    -  CDR-Disease
-- [Gene/Protein NER](#3)
-    -  BC2GM
-    -  JNLPBA
-- [Mutation NER](#4)
-    -  MutationFinder
-    -  tmVar
-- [Species NER](#5)
-    -  LINNAEUS
+- [CCKS 2017](#17)
+- [CCKS 2018](#18)
+- [CCKS 2019](#19)
+- [CCKS 2020](#20)
 
 
-<h2 id="1">Chemical NER </h2>
+## CCKS 2017  ##
+<a name="17"></a>
+CCKS17：原始数据集分为训练集和测试集，其中训练集包括300个医疗记录，人工标注了五类实体(包括症状和体征、检查和检验、疾病和诊断、治疗、身体部位)。测试集包含100个医疗记录。 
 
-### CHEMDNER  ### 
-[CHEMDNER (chemical compound and drug name recognition) task](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-7-S1-S1) as part of the BioCreative IV challenge aims to promote the development of systems for the automatic recognition of chemical entities in text. It was divided into two tasks: one covered the indexing of documents with chemicals (chemical document indexing - CDI task), and the other was concerned with finding the exact mentions of chemicals in text (chemical entity mention recognition - CEM task). Here, we only focus on the CEM task. 
+语料数据统计
+|  | 症状体征|检查检验|疾病诊断|治疗|身体部位|总共| 
+| ----------- | :----:| :----: | :----: | --- | :----: | :----: |
+| 训练集 | 7,831	|9,546	|722	|1,048	|10,719|1|
+| 测试集 | 2,311	|3,143|	553|	465	|3,021|1|
+
+
 
 The CHEMDNER corpus consists of 10,000 PubMed abstracts, which contains a total of 84,355 chemical entity mentions. The original corpus is divided into training set (3,500 abstracts), development set (3,500 abstracts) and test set (3,000 abstracts)
 
