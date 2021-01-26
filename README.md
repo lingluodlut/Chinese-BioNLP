@@ -6,7 +6,9 @@
 ## 中文电子病历命名实体识别 ##
 中文电子病历命名实体识别（Clinical Named Entity Recognition, CNER）任务目标是从给定的电子病历纯文本文档中识别并抽取出与医学临床相关的实体提及，并将它们归类到预定义的类别。下图展示了CCKS18 CNER评测数据的一个样例。
 
-![image](/image/CNER.png)
+<div  align="center">    
+<img src="/image/CNER.png" width = "400" height = "200" align=center />
+</div>
 
 - [Papers](BioNER_paper.md)
     - 综述
