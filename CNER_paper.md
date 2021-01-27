@@ -8,8 +8,8 @@ Over the past decades, many automatic BioNER methods have been proposed and used
 
 ## 综述论文 ##
 1. **Overview of CCKS 2018 Task 1: Named Entity Recognition in Chinese Electronic Medical Records**. Zhang J, Li J, Jiao Z, et al. *In China Conference on Knowledge Graph and Semantic Computing*, Springer, 2019:158-164. [[paper]](https://link.springer.com/chapter/10.1007/978-981-15-1956-7_14) 
-2. **Biomedical named entity recognition: a survey of machine-learning tools**. Campos D, Matos S, Oliveira J L. *Theory and Applications for Advanced Text Mining*, 2012: 175-195. [[paper]](https://books.google.com.hk/books?hl=zh-CN&lr=&id=EfqdDwAAQBAJ&oi=fnd&pg=PA175&ots=WEKIblRekC&sig=FWoufJtWVSDHD3gbWaZXruEOiEs&redir_esc=y#v=onepage&q&f=false)
-2. **Chemical named entities recognition: a review on approaches and applications**.  Eltyeb S, Salim N. *Journal of cheminformatics*, 2014, 6(1): 17. [[paper]](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-6-17)
+2. **Overview of the CCKS 2019 Knowledge Graph Evaluation Track: Entity, Relation, Event and QA**. Han X, Wang Z, Zhang J, et al. *arXiv preprint*, 2020, arXiv:2003.03875. [[paper]](https://arxiv.org/abs/2003.03875) 
+
 
 
 ## 方法论文 ##
