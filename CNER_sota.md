@@ -1,4 +1,4 @@
-# CNER SOTA #
+# 中文电子病历实体识别现存方法性能 #
 
 中文电子病历实体识别任务的数据集以及相应数据集上系统模型性能表现。目前现存公开的中文电子病历标注数据十分稀缺，为了推动CNER系统在中文临床文本上的表现，中国知识图谱与语义计算大会(China Conference on Knowledge Graph and Semantic Computing, CCKS)在近几年都组织了面向中文电子病历的命名实体识别评测任务，下面我们主要关注CCKS评测上的结果。
  
@@ -29,7 +29,9 @@ CCKS17数据集：原始数据集分为训练集和测试集，其中训练集�
 | BiLSTM-CRF-DIC (Wang et al., 2019) | - |	- |	- |	- |	- | 91.24 | [Incorporating dictionaries into deep neural networks for the chinese clinical named entity recognition](https://doi.org/10.1016/j.jbi.2019.103133) |
 | RD-CNN-CRF (Qiu et al., 2019) | - |	- |	- |	- |	- | 91.32 | [Chinese Clinical Named Entity Recognition Using Residual Dilated Convolutional Neural Network with Conditional Random Field](https://doi.org/10.1109/TNB.2019.2908678) |
 | Tang et al. (2019) | - |	- |	- |	- |	- | 91.34 | [融入语言模型和注意力机制的临床电子病历命名实体 识别](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2020&filename=JSJA202003034&v=Ntl86ICshXNN1esogTLhJ2IVb0OpIvyIjXQtWpJ%25mmd2BHFriZZVaOS1OAvlni6EQ3gJB) |
+| PDET Feature in Model-II (Lu et al., 2019) | - |	- |	- |	- |	- | 92.68 | [Chinese Clinical Named Entity Recognition with Word-Level Information Incorporating Dictionaries](https://doi.org/10.1109/IJCNN.2019.8852113) |
 | BiLSTM-CRF-SP+ELMo (Luo et al., 2020) | 95.37 |	94.94 |	81.13 |	83.32 |	88.74 | 91.75 | [基于笔画ELMo和多任务学习的中文电子病历命名实体识别研究](https://nxgp.cnki.net/kcms/detail?v=3uoqIhG8C46NmWw7YpEsKMypi3qVj28LGACqMpRVR0Cx7F0z4nrArOkieaNEVV6aCvPFCLMxyD4Jd9UPWqorowq7bp%25mmd2BEnUre&uniplatform=NZKPT) |
+| FT-BERT + BiLSTM + CRF+Fea (Li et al., 2020) | 96.57 |	94.09 |	81.26 |	82.62 |	88.37 | 91.60 | [Chinese clinical named entity recognition with variant neural structures based on BERT methods](https://doi.org/10.1016/j.jbi.2020.103422) |
 
 注：Top表示当时评测的前三名系统方法。
 
@@ -58,7 +60,9 @@ CCKS18数据集：原始数据集包括训练集和测试集．其中训练集�
 | BiLSTM-CRF (Ji et al., 2018) | 86.65 | 89.13 | 90.69 |	91.15 |	85.61 | 87.68 | [A BiLSTM-CRF Method to Chinese Electronic Medical Record Named Entity Recognition](https://doi.org/10.1145/3302425.3302465) |
 | Lattice-LSTM (潘璀然等人, 2019) | - |	- |	- |	- |	- | 89.75 | [基于句子级 Lattice- 长短记忆神经网络的中文电子病历命名实体识别](https://doi.org/10.16781/j.0258-879x.2019.05.0497) |
 | Attention-BiLSTM-CRF + all (Ji et al, 2019) | - |	- |	- |	- |	- | 90.82 | [A hybrid approach for named entity recognition in Chinese electronic medical record](https://doi.org/10.1186/s12911-019-0767-2) |
+| MSD_DT_NER (Luo et al., 2020) | 88.01 |	92.57 |	90.71 |	94.58 |	85.62 | 89.88 | [Chinese medical named entity recognition based on multi-granularity semantic dictionary and multimodal tree](https://doi.org/10.1016/j.jbi.2020.103583) |
 | BiLSTM-CRF-SP+ELMo (Luo et al., 2020) | 89.69 |	91.83 |	92.01 |	91.30 |	86.22 | 90.05 | [基于笔画ELMo和多任务学习的中文电子病历命名实体识别研究](https://nxgp.cnki.net/kcms/detail?v=3uoqIhG8C46NmWw7YpEsKMypi3qVj28LGACqMpRVR0Cx7F0z4nrArOkieaNEVV6aCvPFCLMxyD4Jd9UPWqorowq7bp%25mmd2BEnUre&uniplatform=NZKPT) |
+| FT-BERT + BiLSTM + CRF+Fea (Li et al., 2020) | 89.12 |	90.66 |	92.94 |	87.99 |	87.59 | 89.56 | [Chinese clinical named entity recognition with variant neural structures based on BERT methods](https://doi.org/10.1016/j.jbi.2020.103422) |
 
 
 ## [CCKS 2019](https://www.biendata.xyz/competition/ccks_2019_1/)  ##
