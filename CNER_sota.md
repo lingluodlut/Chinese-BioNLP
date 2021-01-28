@@ -1,6 +1,6 @@
 # 中文电子病历实体识别现存方法性能 #
 
-中文电子病历实体识别任务的数据集以及相应数据集上系统模型性能表现。目前现存公开的中文电子病历标注数据十分稀缺，为了推动CNER系统在中文临床文本上的表现，中国知识图谱与语义计算大会(China Conference on Knowledge Graph and Semantic Computing, CCKS)在近几年都组织了面向中文电子病历的命名实体识别评测任务，下面我们主要关注CCKS评测上的结果。
+中文电子病历实体识别任务的数据集以及相应数据集上系统模型性能表现。目前现存公开的中文电子病历标注数据十分稀缺，为了推动CNER系统在中文临床文本上的表现，中国知识图谱与语义计算大会(China Conference on Knowledge Graph and Semantic Computing, CCKS)在近几年都组织了面向中文电子病历的命名实体识别评测任务，下面我们主要关注CCKS CNER数据集上的结果。
  
 - [CCKS 2017](#17)
 - [CCKS 2018](#18)
@@ -55,14 +55,16 @@ CCKS18数据集：原始数据集包括训练集和测试集．其中训练集�
 
 | 方法 | 解剖部位|症状描述|独立症状|药物|手术|总体|论文|
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| CRF(Yang and Huang) (2018) Top1 | 87.97 |	90.59 |	92.45 |	94.49 |	85.43 | 89.13 | [A Conditional Random Fields Approach to Clinical Name Entity Recognition](http://ceur-ws.org/Vol-2242/paper01.pdf) |
-| Ensemble (Luo et al., 2018) Top3 | 87.59 |	90.77 |	91.72 |	91.53 |	86.41 | 88.63 | [DUTIR at the CCKS-2018 Task1: A Neural Network Ensemble Approach for Chinese Clinical Named Entity Recognition](http://ceur-ws.org/Vol-2242/paper02.pdf) |
+| Alihealth Lab (Yang and Huang) (2018) Top1 | 87.97 |	90.59 |	92.45 |	94.49 |	85.43 | 89.13 | [A Conditional Random Fields Approach to Clinical Name Entity Recognition](http://ceur-ws.org/Vol-2242/paper01.pdf) |
+| DUTIR (Luo et al., 2018) Top3 | 87.59 |	90.77 |	91.72 |	91.53 |	86.41 | 88.63 | [DUTIR at the CCKS-2018 Task1: A Neural Network Ensemble Approach for Chinese Clinical Named Entity Recognition](http://ceur-ws.org/Vol-2242/paper02.pdf) |
 | BiLSTM-CRF (Ji et al., 2018) | 86.65 | 89.13 | 90.69 |	91.15 |	85.61 | 87.68 | [A BiLSTM-CRF Method to Chinese Electronic Medical Record Named Entity Recognition](https://doi.org/10.1145/3302425.3302465) |
 | Lattice-LSTM (潘璀然等人, 2019) | - |	- |	- |	- |	- | 89.75 | [基于句子级 Lattice- 长短记忆神经网络的中文电子病历命名实体识别](https://doi.org/10.16781/j.0258-879x.2019.05.0497) |
 | Attention-BiLSTM-CRF + all (Ji et al, 2019) | - |	- |	- |	- |	- | 90.82 | [A hybrid approach for named entity recognition in Chinese electronic medical record](https://doi.org/10.1186/s12911-019-0767-2) |
-| MSD_DT_NER (Luo et al., 2020) | 88.01 |	92.57 |	90.71 |	94.58 |	85.62 | 89.88 | [Chinese medical named entity recognition based on multi-granularity semantic dictionary and multimodal tree](https://doi.org/10.1016/j.jbi.2020.103583) |
+| MSD_DT_NER (Wang et al., 2020) | 88.01 |	92.57 |	90.71 |	94.58 |	85.62 | 89.88 | [Chinese medical named entity recognition based on multi-granularity semantic dictionary and multimodal tree](https://doi.org/10.1016/j.jbi.2020.103583) |
 | BiLSTM-CRF-SP+ELMo (Luo et al., 2020) | 89.69 |	91.83 |	92.01 |	91.30 |	86.22 | 90.05 | [基于笔画ELMo和多任务学习的中文电子病历命名实体识别研究](https://nxgp.cnki.net/kcms/detail?v=3uoqIhG8C46NmWw7YpEsKMypi3qVj28LGACqMpRVR0Cx7F0z4nrArOkieaNEVV6aCvPFCLMxyD4Jd9UPWqorowq7bp%25mmd2BEnUre&uniplatform=NZKPT) |
 | FT-BERT + BiLSTM + CRF+Fea (Li et al., 2020) | 89.12 |	90.66 |	92.94 |	87.99 |	87.59 | 89.56 | [Chinese clinical named entity recognition with variant neural structures based on BERT methods](https://doi.org/10.1016/j.jbi.2020.103422) |
+
+注：Top表示当时评测的前三名系统方法。
 
 
 ## [CCKS 2019](https://www.biendata.xyz/competition/ccks_2019_1/)  ##
@@ -84,11 +86,11 @@ CCKS19数据集：原始数据集包括训练集和测试集．其中训练集�
 
 | 方法 | 疾病和诊断|检查|检验|手术|药物|解剖部位|总体|论文|
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |:----: |
-| BBC+BBT+FBBC+规则(乔锐等人) (2019) Top1 | 84.29 | 86.29 | 76.94 | 83.33 |	96.02 | 86.18 | 85.62 |[基于BERT与模型融合的医疗命名实体识别](https://conference.bj.bcebos.com/ccks2019/eval/webpage/pdfs/eval_paper_1_1_1.pdf) |
+| Alihealth (乔锐等人, 2019) Top1 | 84.29 | 86.29 | 76.94 | 83.33 |	96.02 | 86.18 | 85.62 |[基于BERT与模型融合的医疗命名实体识别](https://conference.bj.bcebos.com/ccks2019/eval/webpage/pdfs/eval_paper_1_1_1.pdf) |
 | MSIIP (Liu et al., 2019) Top2 | - | - |	- |	- |	- | - | 85.59|[Team MSIIP at CCKS 2019 Task 1](https://conference.bj.bcebos.com/ccks2019/eval/webpage/pdfs/eval_paper_1_1_2.pdf) |
 | DUTIR (Li et al., 2019) Top3 | 82.81 | 88.01 | 75.65 |	86.79 |	94.49 | 85.99 | 85.16| [DUTIR at the CCKS-2019 Task 1: Improving Chinese clinical named entity recognition using stroke ELMo and transfer learning](https://www.researchgate.net/profile/Ling_Luo11/publication/335824610_DUTIR_at_the_CCKS-2019_Task1_Improving_Chinese_Clinical_Named_Entity_Recognition_using_Stroke_ELMo_and_Transfer_Learning/links/5d7d836992851c87c389caf8/DUTIR-at-the-CCKS-2019-Task1-Improving-Chinese-Clinical-Named-Entity-Recognition-using-Stroke-ELMo-and-Transfer-Learning.pdf) |
 
-
+注：Top表示当时评测的前三名系统方法。
 
 ## [CCKS 2020](https://www.biendata.xyz/competition/ccks_2020_2_1/)  ##
 <a name="20"></a>
@@ -112,3 +114,5 @@ CCKS20数据集：原始数据集包括训练集和测试集．其中训练集�
 | CASIA_Unisound (Li et al.,2020) Top1 | 90.93 | 89.96 | 85.94 | 94.85 |	93.56 | 91.62 | 91.56 |[Noisy Label Learning for Chinese Medical Named Entity Recognition Based on Uncertainty Strategy](https://bj.bcebos.com/v1/conference/ccks2020/eval_paper/ccks2020_eval_paper_3_1_1.pdf) |
 | TMAIL (晏阳天等人, 2020) Top2 | 90.53 | 88.47 |	83.50 |	96.21 |	93.75 | 92.00 | 91.54|[基于BERT与字形字音特征的医疗命名实体识别](https://bj.bcebos.com/v1/conference/ccks2020/eval_paper/ccks2020_eval_paper_3_1_2.pdf) |
 | ChiEHRBert (杨文明等人, 2020) Top3 | 91.10 | 88.62 | 85.71 |	95.52 |	92.93 | 91.16 | 91.24| [基于 ChiEHRBert 与多模型融合的医疗命名实体识别](https://bj.bcebos.com/v1/conference/ccks2020/eval_paper/ccks2020_eval_paper_3_1_3.pdf) |
+
+注：Top表示当时评测的前三名系统方法。
